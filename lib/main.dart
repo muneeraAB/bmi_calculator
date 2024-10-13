@@ -70,3 +70,16 @@ class _MainAppState extends State<MainApp> {
     ));
   }
 }
+//
+//return Column(
+      //mainAxisAlignment: MainAxisAlignment.center,
+      //children: [
+        //Text(displayText, style: TextStyle(fontSize: 24)),
+        //SizedBox(height: 20), // Add some space between text and button
+        //ElevatedButton(
+          //onPressed: _toggleCondition,
+         // child: Text('Toggle Condition'),
+        //),
+      //],
+    //);
+  
