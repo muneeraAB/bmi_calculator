@@ -27,59 +27,56 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
-      debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(
             title: Text('rock , paper , scissors'),
-            backgroundColor: Colors.yellow
-            ,
+            backgroundColor: Colors.yellow,
           ),
-          
           body: Center(
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                  padding: EdgeInsets.all(10),
-                  child: Image.asset(
-                    'assets/images/$rps1.png',
-                    width: 120,
-                    height: 120,
-                  )),
-              Container(
-                  padding: EdgeInsets.all(10),
-                  child: Image.asset(
-                    'assets/images/$rps2.png',
-                    width: 120,
-                    height: 120,
-                  ))
-            ],
-          ),
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Container(
-              child: ElevatedButton(
-                onPressed: play,
-                child: Text("play"),//play function 
+            child:
+                Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                      padding: EdgeInsets.all(10),
+                      child: Image.asset(
+                        'assets/images/$rps1.png',
+                        width: 120,
+                        height: 120,
+                      )),
+                  Container(
+                      padding: EdgeInsets.all(10),
+                      child: Image.asset(
+                        'assets/images/$rps2.png',
+                        width: 120,
+                        height: 120,
+                      ))
+                ],
               ),
-            )
-          ]),
-        ]),
-      ),
-    ));
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                Container(
+                  child: ElevatedButton(
+                    onPressed: play,
+                    child: Text("play"), //play function
+                  ),
+                )
+              ]),
+            ]),
+          ),
+        ));
   }
 }
 //
 //return Column(
-      //mainAxisAlignment: MainAxisAlignment.center,
-      //children: [
-        //Text(displayText, style: TextStyle(fontSize: 24)),
-        //SizedBox(height: 20), // Add some space between text and button
-        //ElevatedButton(
-          //onPressed: _toggleCondition,
-         // child: Text('Toggle Condition'),
-        //),
-      //],
-    //);
-  
+//mainAxisAlignment: MainAxisAlignment.center,
+//children: [
+//Text(displayText, style: TextStyle(fontSize: 24)),
+//SizedBox(height: 20), // Add some space between text and button
+//ElevatedButton(
+//onPressed: _toggleCondition,
+// child: Text('Toggle Condition'),
+//),
+//],
+//);
